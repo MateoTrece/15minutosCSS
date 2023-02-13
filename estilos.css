@@ -1,0 +1,144 @@
+* {
+    /*con * seleccionamos todos los componentes de la pagina*/
+    margin: 0px;
+    /*para que no tenga margin*/
+    padding: 0px;
+    /*para que no tenga padding*/
+
+}
+
+body {
+    /* Asi se hace el SELECTOR de ETIQUETAS */
+    background: lightblue;
+    /*Seleccionar color del fondo del body*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Elegir fuente del texto, dandole opciones por si alguna no esta instalada*/
+
+
+}
+
+/*las etiquetas y clases pueden tener elementos con el mismo nombre reptidos, pero el id es unico para cada elemento y lo llamamos con # */
+#container {
+    /* Asi se hace el SELECTOR de ID */
+    /*Queremos darle forma y color de acuerdo al diseño*/
+    /*width: 70% ; > tamaño del container*/
+    width: 1100px;
+    /*ancho del container*/
+    margin: 0px auto;
+    /*Darle margen a los cuatros lados del contendero*/
+    border: 1px solid green;
+    /*border para el borde del elemento en sus 4 lados, con un grosor de 1px y solid para que sea una linea continua*/
+
+
+}
+
+/* selector para etiqueta header o cabezera */
+
+header {
+    background: lightgoldenrodyellow;
+    height: 100px;
+    /*altura*/
+    width: 100%;
+    /*Ancho*/
+    text-align: center;
+    /* alinear horizontalmente texto, tipo: centrar*/
+    line-height: 100px;
+    /*alinear de forma vertifcal, 100px porque es igual a la altura de esta caja*/
+    color: blueviolet;
+    /* color del texto*/
+    border-bottom: 3px dashed black;
+    /* border por abajo, tipo: punteado(dashed)*, color negro*/
+    border-top: 4px trick double orange;
+    /*border arriba tipo, color naranja*/
+    border-left: 2px solid yellow;
+    /*border por izquierda, tipo solid, color amarillo*/
+    border-right: 4px ridge gold;
+    /*border por la derecha, tipo ridge color dorado */
+}
+/*seleccionar NAV*/
+
+nav{
+    background: lightcoral;
+    height: 50px;
+    border-bottom: 1px red;
+
+}
+
+
+/*seleccionar NAV que es el MENU y sus elementos ul y il a la vez*/
+
+nav ul li {
+    float: left;
+    /*los elementos de nav llamados ul y il se flotan a la izquierda*/
+    list-style: none;
+    /*estilo de listado NINGUNO*/
+    margin: 10px;
+    /*margen para cada elemento en todos su lados, 10px de tamaño*/
+    line-height: 30px; 
+    /*Distancia entre linea de textos, algo como renglones*/
+
+}
+
+.clearfix {
+    /*llamo la clase -clearfix-*/
+    clear:both;/*cuando se floten elementos, los elementos de abajo se quedan en su sitio*/
+}
+
+.article {
+    /* Asi se hace el SELECTOR de CLASE*/
+
+    color: white; /*color de texto, blanco*/
+    margin-top: 15px; /*margin arriba*/
+    margin-bottom: 15px; /*margin abajo*/
+    padding-bottom: 10px; /*padding por abajo */
+    border-bottom: 1px solid #eee; /*border solo abajo de color claro*/
+}
+
+/*seleccionamos nuevamente la etiqueta article pero solo el primer elemento,hijo*/
+
+.article:first-child{
+    padding-top: 10px; /*padding arriba*/
+    border-top: 1px solid #eee;
+
+}
+
+/*selecciona los h2 de la etiqueta article*/
+.article h2{
+    font-size: 25px ; /*tamaño de letra*/
+
+}
+
+/* selecciono el id ="content" con # */
+#content{
+    float: left; /*flota hacia la izquierda*/
+    width: calc(80% - 80px); /*calc() para restarle el padding de 40px x 2 manteniendo la forma*/
+    min-height: 500px ;/* Altura minima */
+    background: blue; /*color blue*/
+    padding: 40px;
+}
+/*selecciono etiqueta -aside- , flotando a la izquierda con ancho 20% y color orange*/
+aside{
+    float: left;
+    width: calc(20% - 20px); /*calc() para restarle el padding de 10px x 2 manteniendo la forma*/
+    background: orange;
+    min-height: 500px ;/* Altura minima */
+    padding: 10px; /*padding es el area de relleno de los 4 lados del elemento, tambien se le llama margenes interiores*/
+    /*
+    padding-left: 20px ; padding izquierda
+    padding-top: 15px ; padding arriba
+    padding-bottom: 8px ; padding abajo
+    padding-right: 5; padding derecha*/}
+
+
+    
+}
+
+/*Selecciono el -footer- para darle estilos*/
+footer{
+    background: black;/*fondo negro*/
+    color: white;/*color blanco*/
+    text-align: center; /*texto alineado al centro*/
+    height: 50px; /*altura*/
+    line-height: 50px ; /*alineado vertical*/   
+
+}

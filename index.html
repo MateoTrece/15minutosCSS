@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <title>CSS con Victor Robles</title> <!--Titulo en metadata-->
-    <style>/*Formas de sleccionar etiquetas, id y clases*/
+    <link rel="stylesheet" href="estilos.css" /> <!--link para enlazar hoja de estilos.css-->
 
-    </style>
+    <!--    <style>/*Formas de selectores de etiquetas, id y clases , aqui solo reglas css para estilos*/ 
+        body{/* Asi se hace el SELECTOR de ETIQUETAS */
+            background: lightblue;        
+
+        }
+
+        #container{/* Asi se hace el SELECTOR de ID */
+
+
+
+        }
+
+        .articles{/* Asi se hace el SELECTOR de CLASE*/
+
+
+        }
+    </style>-->
+
 </head>
+
 <body> <!--CUERPO de la WEB-->
     <div id="container"> <!--Div es como una caja, id  es un identificador, este div contiene todo-->
         <header><!--ENCABEZADO de pagina-->
@@ -39,49 +58,56 @@
                 </li>
 
             </ul>
+            </nav>
+            <div class="clearfix"></div>
+            <!--para que los elementos de abajo no se suban por default-->
+    
 
             <section id="content"><!--Seccion-->
-                <article class="article">  <!--articulo-->
+                <article class="article"> <!--articulo-->
                     <h2>Titulo del articulo</h2>
                     <p>Texto del articulo</p>
-                    
-                </article>    
-                <article class="article">  <!--articulo-->
+
+                </article>
+                <article class="article"> <!--articulo-->
                     <h2>Titulo del articulo</h2>
                     <p>Texto del articulo</p>
-                    
-                </article>    
-                <article class="article">  <!--articulo-->
+
+                </article>
+                <article class="article"> <!--articulo-->
                     <h2>Titulo del articulo</h2>
                     <p>Texto del articulo</p>
-                    
-                </article>    
-                <article class="article">  <!--articulo-->
+
+                </article>
+                <article class="article"> <!--articulo-->
                     <h2>Titulo del articulo</h2>
                     <p>Texto del articulo</p>
-                    
-                </article>    
+
+                </article>
 
 
             </section>
-                <aside> <!--BARRA LATERAL-->
-                    <h2>Barra Lateral</h2>
-                    <form> <!--Formulario-->
-                        <input type="text">
-                        <input type="submit" value = "Buscar" />
+            <aside> <!--BARRA LATERAL-->
+                <h2>Barra Lateral</h2>
+                <form> <!--Formulario-->
+                    <input type="text">
+                    <input type="submit" value="Buscar" />
 
-                    </form>
+                </form>
 
-                </aside>
+            </aside>
+            <div class="clearfix"></div>
+            <!--para que los elementos de abajo no se suban por default-->
+            
+            <footer>
+                Victor Robles WEB &copy; 2023
+            </footer>
 
-                <footer>
-                    Victor Robles WEB &copy; 2023
-                </footer>
 
-        </nav>
+        
 
+    </div>
 
-    </div>    
-    
 </body>
+
 </html>
